@@ -15,6 +15,13 @@ public class Alquiler {
     	disco = pDisco;
     	diasAlquilado = pDiasAlquilado;
     }
+    public double getMontoAlquiler(){
+	    return disco.getPelicula().getTipoPelicula().getMontoAlquiler(this.diasAlquilado);
+    }
+    public boolean isEstreno(){
+	    return this.disco.getPelicula().getTipo()== TipoPelicula.ESTRENO;
+    }
+
     
 
 }
